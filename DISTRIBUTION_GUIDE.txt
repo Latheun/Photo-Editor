@@ -1,0 +1,50 @@
+HOW TO DISTRIBUTE PHOTO EDITOR TO USERS
+====================================
+
+This guide explains how to provide a standalone executable version of Photo Editor that works on ANY Windows computer without requiring Python or any other software.
+
+STEP 1: BUILD THE EXECUTABLE (DEVELOPER ONLY)
+-------------------------------------------
+This step is done ONCE by the developer on a Windows machine with Python installed:
+
+1. On your development computer, run:
+   ```
+   python package_to_exe.py
+   ```
+
+2. The script will create a completely standalone .exe file with everything bundled inside
+   (PyInstaller packages Python, all libraries, and models into the executable)
+
+3. The final package will be in the "dist/PhotoEditor" folder
+
+STEP 2: PREPARE THE DISTRIBUTION PACKAGE
+--------------------------------------
+1. Zip the entire "dist/PhotoEditor" folder
+   - This contains PhotoEditor.exe and the required folders
+   - The zip file will be large (300-500 MB) because it contains everything
+
+2. Name it something like "PhotoEditor_v1.0.zip"
+
+STEP 3: DISTRIBUTE TO USERS
+------------------------
+Simply share the zip file with your users. They don't need Python or any other software.
+
+WHAT USERS NEED TO DO
+-------------------
+Users simply:
+
+1. Download and extract the zip file to any location on their computer
+2. Double-click PhotoEditor.exe to run the application
+3. Place their photos in the "input_photos" folder
+4. Use the application to process photos
+5. Find processed results in the "output_photos" folder
+
+IMPORTANT: The executable contains EVERYTHING needed to run. It works on any Windows system (7/8/10/11) without installing Python or any libraries.
+
+TROUBLESHOOTING FOR USERS
+-----------------------
+If users encounter issues:
+
+1. Make sure they've extracted the entire zip file (not just running it from inside the zip)
+2. Antivirus might initially block it - users may need to allow the application
+3. First launch may be slower as Windows validates the new executable 
