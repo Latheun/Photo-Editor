@@ -1,2 +1,84 @@
-yolov8m.pt
-yolov8x.pt
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+photo_editor_env_py311
+
+# Virtual Environment
+photo_editor_env/
+photo_editor_env_py311/
+venv/
+ENV/
+env/
+
+# PyInstaller specific
+*.manifest
+*.spec
+build/
+dist/
+
+# Models and large files
+*.pt
+*.onnx
+*.engine
+*.weights
+*.h5
+
+# Input and output photos
+input_photos/*
+output_photos/*
+!input_photos/.gitkeep
+!output_photos/.gitkeep
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings
+
+# Windows specific
+icon.ico
+*.lnk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Mac OS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Project specific
+# Uncomment if you want to include these in version control
+# setup_windows.bat
+# run_photo_editor.bat

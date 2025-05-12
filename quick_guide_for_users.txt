@@ -1,0 +1,49 @@
+PHOTO EDITOR - QUICK START GUIDE
+============================
+
+This application automatically processes photos for official documents,
+ID cards, passports, and similar uses.
+
+GETTING STARTED
+-------------
+
+1. PLACE YOUR PHOTOS in the "input_photos" folder
+
+2. DOUBLE-CLICK on "PhotoEditor.exe" to start the application
+
+3. CLICK "Process Photos" button to begin processing
+
+4. FIND PROCESSED PHOTOS in the "output_photos" folder
+
+FEATURES
+-------
+
+• Automatically rotates and aligns faces correctly
+• Detects and crops to the person in the photo
+• Resizes photos to standard document dimensions
+• Handles multiple photos in a single batch
+
+CUSTOMIZING SETTINGS
+------------------
+
+In the application, you can customize:
+
+• Input and output folders
+• Photo dimensions (width and height in pixels)
+
+TROUBLESHOOTING
+-------------
+
+If the application doesn't start:
+• Make sure you've extracted the entire zip file
+• Some antivirus software might block it initially - you may need to allow it
+• First launch might be slow as Windows validates the executable
+
+If photos aren't processed correctly:
+• Make sure the person's face is clearly visible
+• Try using photos with good lighting and clear backgrounds
+
+SUPPORT
+------
+
+For more help, contact: your-email@example.com 
