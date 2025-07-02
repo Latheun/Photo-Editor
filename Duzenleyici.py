@@ -48,8 +48,8 @@ def get_face_angle(image):
     angle = np.degrees(np.arctan2(dy, dx))
     return angle
 
-def rotate_image(image, angle):
-    (h, w) = image.shape[:2]
+ def rotate_image(image, angle):
+   (h, w) = image.shape[:2]
     center = (w // 2, h // 2)
     rot_matrix = cv2.getRotationMatrix2D(center, angle, 1.0)
     return cv2.warpAffine(image, rot_matrix, (w, h), flags=cv2.INTER_LINEAR)
